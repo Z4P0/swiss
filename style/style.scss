@@ -1,0 +1,98 @@
+@import "normalize";
+
+/**
+ * base styles
+ */
+body {
+  -webkit-font-smoothing: antialiased;
+  font: 100% "Helvetica Neue", Verdana, Arial, sans-serif;
+  line-height: 1.4;
+  color: #000;
+	background-color: #e30016;
+}
+.wrapper {
+	position: relative;
+	width: 80%;
+	max-width: 1024px;
+	margin: 0 auto;
+}
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+.cf:after {clear: both; }
+.inline, .inline li {
+	display: inline-block;
+}
+p {
+	margin: 0 0 1em;
+}
+ul {
+	padding-left: 0;
+	list-style-type: none;
+}
+li {
+	// padding: 0; margin: 0;
+}
+h1 { font-size: 1em; margin-bottom: 0;}
+footer { font-size: 0.75em; }
+
+nav {
+	font-size: 0.875em;
+	ul {margin: 0; padding: 0;}
+	li {
+		margin-right: 1em;
+		&:hover {
+			cursor: pointer;
+			border-bottom: 1px solid;
+		}
+	}
+}
+/* Traditional scale */
+/*
+6  = 0.375em
+7  = 0.4375em
+8  = 0.5em
+9  = 0.5625em
+10 = 0.625em
+11 = 0.6875em
+12 = 0.75em
+14 = 0.875em
+16 = 1em
+18 = 1.125em
+21 = 1.3125em
+24 = 1.5em
+36 = 2.25em
+48 = 3em
+60 = 3.75em
+72 = 4.5em
+*/
+
+
+@import "one";
+
+
+/* the voidoids */
+$blue : #128f0a;
+$red : #c31b1a;
+#two {
+	display: none;
+	font-weight: bold;
+	h2 {
+		font-size: 4.5em;
+		line-height: 0.9;
+		&:before {
+			content: "";
+			width: 100%;
+			background-color: #f00;
+			padding-bottom: 3em;
+		}
+	}
+}
+
+.date {
+	margin-top: 5em;
+	border-bottom: 3em $red solid;
+}
+.support { margin-bottom: 5em; }
